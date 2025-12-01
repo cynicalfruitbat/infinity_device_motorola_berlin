@@ -13,7 +13,7 @@ TARGET_BOOTLOADER_BOARD_NAME := berlin
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=berlin
-TARGET_KERNEL_CONFIG += vendor/infinity_berlin.config
+TARGET_KERNEL_CONFIG += vendor/lineage_berlin.config
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
