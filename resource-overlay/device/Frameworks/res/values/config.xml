@@ -136,6 +136,9 @@
          with the value of Build.MODEL , ie https://uaprof.oem_name.com/%s.xml -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf</string>
 
+    <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
+    <string name="config_dozeDoubleTapSensorType" translatable="false">org.lineageos.sensor.double_tap</string>
+
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
@@ -172,14 +175,7 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout" translatable="false">
-        M 0,0
-        h -35
-        v 90
-        h 70
-        v -90
-        Z
-    </string>
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 h -35 v 90 h 70 v -90 Z</string>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
@@ -192,17 +188,17 @@
     <!-- An array of arrays of side fingerprint sensor properties relative to each display.
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
-    <array name="config_sfps_sensor_props" translatable="false">
+    <array name="config_sfps_sensor_props">
         <item>@array/config_sfps_sensor_props_0</item>
     </array>
 
-    <array name="config_sfps_sensor_props_0" translatable="false">
+    <!-- Indicates whether device has a power button fingerprint sensor. -->
+    <bool name="config_is_powerbutton_fps">true</bool>
+
+    <array name="config_sfps_sensor_props_0">
         <item>local:4630947043778501762</item> <!--item>displayId</item-->
         <item>1080</item> <!--item>sensorLocationX</item-->
         <item>705</item> <!--item>sensorLocationY</item-->
         <item>150</item> <!--item>sensorRadius</item-->
     </array>
-
-    <!-- Indicates whether device has a power button fingerprint sensor. -->
-    <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
 </resources>

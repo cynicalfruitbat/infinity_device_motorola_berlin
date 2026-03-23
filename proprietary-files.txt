@@ -358,7 +358,6 @@ vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/config/stk3a5x_0_always.json
 vendor/etc/sensors/config/stk3a5x_0_emerald_always.json
 vendor/etc/sensors/config/stk3a5x_0_white_always.json
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
 # Thermal engine - configs
